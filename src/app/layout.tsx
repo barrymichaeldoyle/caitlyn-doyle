@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { type PropsWithChildren } from "react";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Caitlyn Doyle",
@@ -13,7 +14,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        <header className="flex items-center justify-between bg-blue-400 p-4 text-2xl font-semibold text-white">
+          <Link href="/">
+            <div className="flex items-center">Caitlyn Doyle</div>
+          </Link>
+        </header>
+        <main className="p-4">{children}</main>
+      </body>
     </html>
   );
 }
