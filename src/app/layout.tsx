@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body>
+      <body className="flex min-h-screen flex-col">
         <header className="bg-primary-500 flex items-center justify-between p-4 text-2xl text-neutral-100">
           <Link href="/">
             <div className="flex items-center font-semibold">Caitlyn Doyle</div>
@@ -25,7 +25,15 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
             <Link href="#contact">Contact</Link>
           </nav>
         </header>
-        <main className="p-4">{children}</main>
+        <main className="flex-grow p-4">{children}</main>
+        <footer className="bg-primary-500 mt-auto p-4 text-neutral-100">
+          <div className="container mx-auto flex items-center justify-between">
+            <div className=""></div>
+            <p className="text-xs">
+              Copyright &copy; Caitlyn Doyle {new Date().getFullYear()}
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   );

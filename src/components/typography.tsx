@@ -17,3 +17,16 @@ export function H1(
     />
   );
 }
+
+export function H2(
+  props: PropsWithChildren<
+    DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
+  >,
+) {
+  return (
+    <h2
+      className="first:mt- mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors"
+      {...props}
+    />
+  );
+}
