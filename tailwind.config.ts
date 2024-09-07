@@ -9,9 +9,17 @@ export default {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
       },
       colors: {
-        background: "var(--background)",
-        primary: "var(--primary)",
-        foreground: "var(--foreground)",
+        neutral: {
+          100: "var(--neutral-100)",
+          900: "var(--neutral-900)",
+        },
+        primary: {
+          100: "var(--primary-100)",
+          300: "var(--primary-300)",
+          500: "var(--primary-500)",
+          700: "var(--primary-700)",
+          900: "var(--primary-900)",
+        },
       },
     },
   },

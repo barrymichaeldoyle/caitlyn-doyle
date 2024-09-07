@@ -15,10 +15,15 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
-        <header className="bg-primary flex items-center justify-between p-4 text-2xl font-semibold text-white">
+        <header className="bg-primary-500 flex items-center justify-between p-4 text-2xl text-neutral-100">
           <Link href="/">
-            <div className="flex items-center">Caitlyn Doyle</div>
+            <div className="flex items-center font-semibold">Caitlyn Doyle</div>
           </Link>
+          <nav className="flex gap-4 font-medium">
+            <Link href="#work">Work</Link>
+            <Link href="#about">About</Link>
+            <Link href="#contact">Contact</Link>
+          </nav>
         </header>
         <main className="p-4">{children}</main>
       </body>

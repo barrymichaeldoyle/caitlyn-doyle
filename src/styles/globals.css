@@ -4,12 +4,17 @@
 
 @layer base {
   :root {
-    --background: #dadada;
-    --primary: #046866;
-    --foreground: #1d2019;
+    --neutral-100: #fcfcfc;
+    --neutral-900: #010101;
+
+    --primary-100: #01a29f;
+    --primary-300: #038582;
+    --primary-500: #056766;
+    --primary-700: #034a48;
+    --primary-900: #022d2c;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-neutral-100 text-neutral-900;
   }
 }
