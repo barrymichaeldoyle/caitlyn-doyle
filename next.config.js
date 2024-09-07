@@ -12,6 +12,7 @@ const config = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  transpilePackages: ["lucide-react"],
 };
 
 export default config;

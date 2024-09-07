@@ -5,6 +5,10 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import Link from "next/link";
 
+import { YouTubeIcon } from "~/icons/Youtube";
+import { LinkedInIcon } from "~/icons/LinkedIn";
+import { DribbbleIcon } from "~/icons/Dribbble";
+
 export const metadata: Metadata = {
   title: "Caitlyn Doyle",
   description: "UI/UX Designer and Marketing Specialist",
@@ -19,7 +23,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
           <Link href="/">
             <div className="flex items-center font-semibold">Caitlyn Doyle</div>
           </Link>
-          <nav className="flex gap-4 font-medium">
+          <nav className="flex gap-4 text-xl font-medium">
             <Link href="#work">Work</Link>
             <Link href="#about">About</Link>
             <Link href="#contact">Contact</Link>
@@ -28,7 +32,23 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
         <main className="flex-grow p-4">{children}</main>
         <footer className="bg-primary-500 mt-auto p-4 text-neutral-100">
           <div className="container mx-auto flex items-center justify-between">
-            <div className=""></div>
+            <div className="flex gap-6">
+              <Link
+                href="https://www.youtube.com/@createwithcaity"
+                target="_blank"
+              >
+                <YouTubeIcon />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/caitlyn-doyle-988695167/"
+                target="_blank"
+              >
+                <LinkedInIcon />
+              </Link>
+              {/* <Link href="https://dribbble.com/Cait_Doyle" target="_blank">
+                <DribbbleIcon />
+              </Link> */}
+            </div>
             <p className="text-xs">
               Copyright &copy; Caitlyn Doyle {new Date().getFullYear()}
             </p>
