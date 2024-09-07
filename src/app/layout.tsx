@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import { YouTubeIcon } from "~/icons/Youtube";
 import { LinkedInIcon } from "~/icons/LinkedIn";
-import { DribbbleIcon } from "~/icons/Dribbble";
+// import { DribbbleIcon } from "~/icons/Dribbble";
 
 export const metadata: Metadata = {
   title: "Caitlyn Doyle",
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
       <body className="flex min-h-screen flex-col">
         <header className="bg-primary-500 flex items-center justify-between p-4 text-2xl text-neutral-100">
           <Link href="/">
-            <div className="flex items-center font-semibold">Caitlyn Doyle</div>
+            <h1 className="flex items-center font-semibold">Caitlyn Doyle</h1>
           </Link>
           <nav className="flex gap-4 text-xl font-medium">
             <Link href="#work">Work</Link>
