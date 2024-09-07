@@ -15,7 +15,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
-        <header className="flex items-center justify-between bg-blue-400 p-4 text-2xl font-semibold text-white">
+        <header className="bg-primary flex items-center justify-between p-4 text-2xl font-semibold text-white">
           <Link href="/">
             <div className="flex items-center">Caitlyn Doyle</div>
           </Link>

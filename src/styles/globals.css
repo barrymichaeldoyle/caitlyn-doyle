@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #dadada;
+    --primary: #046866;
+    --foreground: #1d2019;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
