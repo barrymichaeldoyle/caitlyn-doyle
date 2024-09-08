@@ -5,10 +5,9 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import Link from "next/link";
 
-import { YouTubeIcon } from "~/icons/Youtube";
-import { LinkedInIcon } from "~/icons/LinkedIn";
 import { Logo } from "~/layout/Logo";
-// import { DribbbleIcon } from "~/icons/Dribbble";
+import { Footer } from "~/layout/Footer";
+import { Header } from "~/layout/Header";
 
 export const metadata: Metadata = {
   title: "Caitlyn Doyle",
@@ -20,41 +19,9 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body className="flex min-h-screen flex-col">
-        <header className="bg-primary-500 flex items-center justify-between p-2 px-10 text-2xl text-neutral-100">
-          <Link href="/">
-            <Logo />
-          </Link>
-          <nav className="flex gap-8 text-2xl font-medium">
-            <Link href="#work">Work</Link>
-            <Link href="#about">About</Link>
-            <Link href="#contact">Contact</Link>
-          </nav>
-        </header>
+        <Header />
         <main className="flex-grow p-4">{children}</main>
-        <footer className="bg-primary-500 mt-auto p-4 px-10 text-neutral-100">
-          <div className="container mx-auto flex items-center justify-between">
-            <div className="flex gap-6">
-              <Link
-                href="https://www.youtube.com/@createwithcaity"
-                target="_blank"
-              >
-                <YouTubeIcon />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/caitlyn-doyle-988695167/"
-                target="_blank"
-              >
-                <LinkedInIcon />
-              </Link>
-              {/* <Link href="https://dribbble.com/Cait_Doyle" target="_blank">
-                <DribbbleIcon />
-              </Link> */}
-            </div>
-            <p className="text-xs">
-              Copyright &copy; Caitlyn Doyle {new Date().getFullYear()}
-            </p>
-          </div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );
