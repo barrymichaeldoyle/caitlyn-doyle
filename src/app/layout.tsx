@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html lang="en" className={`${GeistSans.variable} scroll-smooth`}>
       <body className="flex min-h-screen flex-col">
         <Header />
         <main className="flex-grow p-4">{children}</main>

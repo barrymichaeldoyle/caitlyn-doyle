@@ -11,15 +11,15 @@ export function WorkCard(props: {
   return (
     <Link
       href="#"
-      className="focus-visible:ring-primary border-primary-500 group w-[412px] rounded-[21px] border shadow-xl transition-all hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+      className="focus-visible:ring-primary border-primary-500 group w-full max-w-[412px] rounded-[21px] border shadow-xl transition-all hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
     >
-      <div className="bg-primary-500 h-[243px] rounded-t-[20px] text-neutral-100">
+      <div className="bg-primary-500 rounded-t-[20px] text-neutral-100">
         <Image
           alt={props.imgAlt}
           width={412}
           height={243}
           src={props.imgSrc}
-          className="h-full w-full rounded-t-[20px] object-cover"
+          className="object-fit w-full rounded-t-[20px]"
           priority={props.priority}
         />
       </div>
