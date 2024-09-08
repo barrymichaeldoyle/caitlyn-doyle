@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import { PageSection } from "~/types";
 
-export function NavContent() {
+export function NavContent(props: { onClick?: () => void }) {
   const [activeSection, setActiveSection] = useState<PageSection | null>(null);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export function NavContent() {
       <Link
         key={section}
         href={`#${section}`}
-        className={`relative border-b-2 ${
+        className={`relative w-fit border-b-2 ${
           activeSection === section ? "border-b-white" : "border-b-primary-500"
         } hover:text-background transition-colors duration-300`}
         onClick={(e) => {
@@ -40,6 +40,7 @@ export function NavContent() {
           document
             .querySelector(`#${section}`)
             ?.scrollIntoView({ behavior: "smooth" });
+          props.onClick?.();
         }}
       >
         {section.charAt(0).toUpperCase() + section.slice(1)}
