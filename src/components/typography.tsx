@@ -25,7 +25,7 @@ export function H2(
 ) {
   return (
     <h2
-      className="first:mt- mt-10 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors"
+      className="mt-10 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0"
       {...props}
     />
   );
