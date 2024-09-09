@@ -11,23 +11,41 @@ export default function HomePage() {
           <WorkCard
             imgAlt="Screenshot of redesigned website"
             imgSrc="/activitar.png"
-            title="Website Design"
+            title="Activitar"
             info="This project involved redesigning the existing website as it was outdated and need a refresh to compete for new clients."
             priority
           />
           <WorkCard
             imgAlt="Screenshot of report generation app"
             imgSrc="/report-buddy.png"
-            title="System Design"
+            title="Report Buddy"
             info="This project involved designing a new system for a report generating system, to save the client time."
             priority
           />
           <WorkCard
             imgAlt="Screenshot of watch sales website"
             imgSrc="/ruby-smart-watch.png"
-            title="Case Study"
+            title="Ruby Smart Watch"
             info="This project involved creating a new website that is mobile responsive for the sale of watches."
             priority
+          />
+          <WorkCard
+            imgAlt="Screenshot of concert ticket sales website"
+            imgSrc="/swest-punk-rock.png"
+            title="Swest Punk Rock"
+            info="This project involved creating a new website that is mobile responsive for the sale of concert tickets."
+          />
+          <WorkCard
+            imgAlt="Screenshot of home loan calculator app"
+            imgSrc="/home-loan-calculator.png"
+            title="Home Loan Calculator"
+            info="This project involved designing a home loan calculator for the South African market."
+          />
+          <WorkCard
+            imgAlt="Screenshot of sudoku app"
+            imgSrc="/sudoku.png"
+            title="Enjoy Sudoku"
+            info="This project involved designing a Sudoku app for people to play on their cell phones."
           />
         </div>
       </section>
