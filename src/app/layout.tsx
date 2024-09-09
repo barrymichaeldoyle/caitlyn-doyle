@@ -20,7 +20,9 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
     <html lang="en" className={`${GeistSans.variable} scroll-smooth`}>
       <body className="flex min-h-screen flex-col">
         <Header />
-        <main className="flex-grow p-4">{children}</main>
+        <div className="flex justify-center">
+          <main className="max-w-[1350px] flex-grow p-4">{children}</main>
+        </div>
         <Footer />
       </body>
     </html>
