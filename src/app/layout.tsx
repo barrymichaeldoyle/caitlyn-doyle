@@ -3,9 +3,7 @@ import "~/styles/globals.css";
 import { type PropsWithChildren } from "react";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
-import Link from "next/link";
 
-import { Logo } from "~/layout/Logo";
 import { Footer } from "~/layout/Footer";
 import { Header } from "~/layout/Header";
 

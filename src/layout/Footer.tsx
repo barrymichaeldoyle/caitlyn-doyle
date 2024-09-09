@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-primary-500 mt-auto p-4 px-10 text-neutral-100">
+    <footer className="mt-auto bg-primary-500 p-4 text-neutral-100 sm:px-10">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex gap-6">
           <Link href="https://www.youtube.com/@createwithcaity" target="_blank">
