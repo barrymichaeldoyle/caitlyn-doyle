@@ -1,6 +1,6 @@
 import { YouTubeIcon } from "~/icons/Youtube";
 import { LinkedInIcon } from "~/icons/LinkedIn";
-// import { DribbbleIcon } from "~/icons/Dribbble";
+import { DribbbleIcon } from "~/icons/Dribbble";
 
 import Link from "next/link";
 
@@ -18,9 +18,9 @@ export function Footer() {
           >
             <LinkedInIcon />
           </Link>
-          {/* <Link href="https://dribbble.com/Cait_Doyle" target="_blank">
+          <Link href="https://dribbble.com/Cait_Doyle" target="_blank">
             <DribbbleIcon />
-          </Link> */}
+          </Link>
         </div>
         <p className="text-xs">
           Copyright &copy; Caitlyn Doyle {new Date().getFullYear()}
