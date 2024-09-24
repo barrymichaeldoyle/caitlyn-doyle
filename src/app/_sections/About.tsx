@@ -26,7 +26,7 @@ export function AboutSection() {
           </div>
           <div className="flex flex-col">
             <div className="flex flex-col">
-              <H3>HI!</H3>
+              <H3>Hi!</H3>
               <H3>I&apos;m Caitlyn Doyle</H3>
             </div>
 
