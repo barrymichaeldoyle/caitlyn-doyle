@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="flex justify-center bg-primary-500 text-neutral-100">
       <InnerContent>
-        <div className="flex items-center justify-between p-4 px-4 pl-10 sm:px-10">
+        <div className="flex items-center justify-between p-4 px-6">
           <div className="flex gap-6">
             <Link href={youtube} target="_blank">
               <YouTubeIcon />
