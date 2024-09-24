@@ -6,6 +6,11 @@ export default function HomePage() {
   return (
     <div className="flex flex-col items-center gap-20 py-10">
       <section className="flex flex-col items-center gap-6">
+        <H2 id={PageSection.about}>About</H2>
+        <p>Coming Soon!</p>
+      </section>
+
+      <section className="flex flex-col items-center gap-6">
         <H2 id={PageSection.work}>Work</H2>
         <div className="flex flex-wrap justify-center gap-8">
           <WorkCard
@@ -48,11 +53,6 @@ export default function HomePage() {
             info="This project involved designing a Sudoku app for people to play on their cell phones."
           />
         </div>
-      </section>
-
-      <section className="flex flex-col items-center gap-6">
-        <H2 id={PageSection.about}>About</H2>
-        <p>Coming Soon!</p>
       </section>
 
       <section className="flex flex-col items-center gap-6">
