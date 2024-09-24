@@ -7,7 +7,7 @@ export function WorkSection() {
   return (
     <section className="flex flex-col items-center gap-6">
       <H2 id={PageSection.work}>Work</H2>
-      <InnerContent>
+      <InnerContent className="p-4">
         <div className="flex flex-wrap justify-center gap-8">
           <WorkCard
             imgAlt="Screenshot of redesigned website"

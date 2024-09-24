@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
 import { PageSection } from "~/types";
 
 export function NavContent(props: { onClick?: () => void }) {
@@ -27,7 +26,7 @@ export function NavContent(props: { onClick?: () => void }) {
     return () => observer.disconnect();
   }, []);
 
-  return [PageSection.work, PageSection.about, PageSection.contact].map(
+  return [PageSection.about, PageSection.work, PageSection.contact].map(
     (section) => (
       <Link
         key={section}

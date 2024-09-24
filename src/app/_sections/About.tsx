@@ -6,7 +6,7 @@ import { PageSection } from "~/types";
 export function AboutSection() {
   return (
     <section className="bg-background flex w-full flex-col items-center py-10">
-      <InnerContent>
+      <InnerContent className="p-4">
         <div className="flex w-full justify-center">
           <H2 id={PageSection.about}>About</H2>
         </div>

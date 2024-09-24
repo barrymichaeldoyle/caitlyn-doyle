@@ -1,5 +1,9 @@
 import { type PropsWithChildren } from "react";
 
-export function InnerContent({ children }: PropsWithChildren) {
-  return <div className="max-w-[1350px] p-4">{children}</div>;
+export function InnerContent(props: PropsWithChildren<{ className?: string }>) {
+  return (
+    <div className={`w-full max-w-[1350px] ${props.className ?? ""}`}>
+      {props.children}
+    </div>
+  );
 }
