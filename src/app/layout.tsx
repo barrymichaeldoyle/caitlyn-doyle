@@ -9,7 +9,7 @@ import { Header } from "~/layout/Header";
 
 export const metadata: Metadata = {
   title: "Caitlyn Doyle",
-  description: "UI/UX Designer and Marketing Specialist",
+  description: "UI/UX Designer and Marketing Specialist | Caitlyn Doyle",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
