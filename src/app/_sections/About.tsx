@@ -5,14 +5,14 @@ import { PageSection } from "~/types";
 
 export function AboutSection() {
   return (
-    <section className="flex flex-col items-start">
-      <div className="flex w-full justify-center">
-        <H2 id={PageSection.about}>About</H2>
-      </div>
-
+    <section className="bg-background flex w-full flex-col items-center py-10">
       <InnerContent>
+        <div className="flex w-full justify-center">
+          <H2 id={PageSection.about}>About</H2>
+        </div>
+
         <div className="flex flex-col gap-6 sm:flex-row">
-          <div className="mb-[-50px] mt-[-60px] sm:mt-[-75px] md:mt-[-100px]">
+          <div className="mb-[-50px] mt-[-60px] sm:mb-0 sm:mt-[-75px] md:mt-[-100px]">
             <Image
               alt="Caitlyn About Image"
               width={837}

@@ -20,6 +20,7 @@ export default {
           700: "var(--primary-700)",
           900: "var(--primary-900)",
         },
+        background: "var(--background)",
       },
     },
   },
