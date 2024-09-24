@@ -19,7 +19,7 @@ export function NavContent(props: { onClick?: () => void }) {
       { threshold: 0.5 },
     );
 
-    document.querySelectorAll("h2[id]").forEach((section) => {
+    document.querySelectorAll("section[id]").forEach((section) => {
       observer.observe(section);
     });
 

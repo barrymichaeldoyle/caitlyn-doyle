@@ -6,14 +6,18 @@ export function WorkCard(props: {
   imgSrc: string;
   title: string;
   info: string;
+  link: string;
   priority?: boolean;
 }) {
+  const target = props.link.startsWith("http") ? "_blank" : "_self";
+
   return (
     <Link
-      href="#"
-      className="focus-visible:ring-primary border-primary-500 group w-full max-w-[412px] rounded-[21px] border shadow-xl transition-all hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+      href={props.link}
+      target={target}
+      className="focus-visible:ring-primary group w-full max-w-[412px] rounded-[21px] border border-primary-500 shadow-xl transition-all hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
     >
-      <div className="bg-primary-500 rounded-t-[20px] text-neutral-100">
+      <div className="rounded-t-[20px] bg-primary-500 text-neutral-100">
         <Image
           alt={props.imgAlt}
           width={412}

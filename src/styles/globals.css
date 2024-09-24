@@ -23,4 +23,8 @@
   body {
     @apply bg-neutral-100 text-neutral-900;
   }
+
+  .link {
+    @apply font-bold text-primary-500;
+  }
 }

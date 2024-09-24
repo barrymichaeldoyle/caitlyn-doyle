@@ -5,10 +5,13 @@ import { PageSection } from "~/types";
 
 export function AboutSection() {
   return (
-    <section className="bg-background flex w-full flex-col items-center py-10">
+    <section
+      id={PageSection.about}
+      className="bg-background flex w-full scroll-mt-20 flex-col items-center py-10"
+    >
       <InnerContent className="p-4">
         <div className="flex w-full justify-center">
-          <H2 id={PageSection.about}>About</H2>
+          <H2>About</H2>
         </div>
 
         <div className="flex flex-col gap-6 sm:flex-row">
