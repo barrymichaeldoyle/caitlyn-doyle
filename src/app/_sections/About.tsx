@@ -31,28 +31,19 @@ export function AboutSection() {
             </div>
 
             <P>
-              A UX designer who transitioned from digital marketing, where I
-              discovered my love for design. I&apos;ve always been naturally
-              creative and enjoy tackling new challenges - repating the same
-              tasks every day isn&apos; for me.
+              A UX Designer who transitioned from digital marketing, where I discovered my love for design. I&apos;ve always been naturally creative and enjoy tackling new challenges — repeating the same daily tasks isn&apos;t for me.
             </P>
 
             <P>
-              My journey into UX began with exploring Figma and design
-              principles while working in marketing, and the balance of
-              creativity, structure, and logic hooked me.
+              My journey into UX began with exploring Figma and design principles while working in marketing. The balance of creativity, structure, and logic hooked me.
             </P>
 
             <P>
-              For me, UX design is like building a puzzle. Each piece comes
-              together, constantly improving to form the best possible solution.
-              My design style is simple and user-focused, always aiming to make
-              things as easy as possible for the end user.
+              For me, UX design is like building a puzzle. Each piece comes together, constantly improving to form the best possible solution. My design style is simple and user-focused, always aiming to make things as easy as possible for the end user.
             </P>
 
             <P>
-              When I&apos;m not designing, you can find me at the beach or, if
-              it&apos;s a rainy day, curled up with a good book.
+              When I&apos;m not designing, you can find me at the beach or curled up with a good book if it&apos;s a rainy day.
             </P>
           </div>
         </div>
