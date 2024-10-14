@@ -3,8 +3,9 @@ import { LinkedInIcon } from "~/icons/LinkedIn";
 import { DribbbleIcon } from "~/icons/Dribbble";
 
 import Link from "next/link";
-import { dribble, linkedin, youtube } from "~/constants/links";
+import { behance, dribble, linkedin, youtube } from "~/constants/links";
 import { InnerContent } from "./InnerContent";
+import { BehanceIcon } from "~/icons/Behance";
 
 export function Footer() {
   return (
@@ -17,6 +18,9 @@ export function Footer() {
             </Link>
             <Link href={linkedin} target="_blank">
               <LinkedInIcon />
+            </Link>
+            <Link href={behance} target="_blank">
+              <BehanceIcon />
             </Link>
             <Link href={dribble} target="_blank">
               <DribbbleIcon />
