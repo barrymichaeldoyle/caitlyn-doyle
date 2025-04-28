@@ -15,7 +15,7 @@ export function WebsiteItem({
   imageAlt,
 }: WebsiteItemProps) {
   return (
-    <div className="flex flex-col">
+    <div className="mb-4 flex flex-col">
       <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[20px] shadow-md">
         <Image
           src={imageSrc}
