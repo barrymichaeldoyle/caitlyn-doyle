@@ -1,29 +1,41 @@
-# Create T3 App
+# Caitlyn Doyle - The Coolest Portfolio Ever 🚀
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Welcome to Caitlyn's digital playground! This isn't just any portfolio - it's a vibe, a mood, a whole aesthetic ✨
 
-## What's next? How do I make an app with this?
+## 🌟 What's the Deal?
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+This site is basically Caitlyn's digital BFF - it's got her back, shows off her skills, and makes her look absolutely fabulous (not that she needs the help 😉)
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## 🎯 Why This Site Slaps
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- **Looks Fresh**: Like that perfect selfie, but for professional stuff
+- **Works Everywhere**: Phone, tablet, laptop - it's got you covered like your favorite hoodie
+- **Super Fast**: Faster than you can say "I'll just check one more thing on my phone"
+- **Everyone's Welcome**: Like a really good party that everyone's invited to
 
-## Learn More
+## 🚀 How to Party (I mean, Run) This Site
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+1. Get the code (like getting the address to the coolest party in town)
+2. Run this magic spell:
+   ```bash
+   pnpm install
+   pnpm dev
+   ```
+3. Boom! You're in! 🎉
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## 🎨 The Vibe
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+This site is all about:
 
-## How do I deploy this?
+- Showing off Caitlyn's amazing work (because she's kind of a big deal)
+- Making potential clients go "Dang, we need her!"
+- Being so cool that other portfolios get jealous
+- Basically being the Beyoncé of portfolio sites
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## 🤫 Secret Sauce
+
+This site was made with love, memes, and probably too much coffee ☕
+
+---
+
+Built with ❤️ by Barry Doyle for the most amazing wife ever
