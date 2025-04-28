@@ -1,12 +1,12 @@
 import { AboutSection } from "./_sections/About";
-import { WorkSection } from "./_sections/Work";
+import { ProjectsSection } from "./_sections/Projects";
 import { ContactSection } from "./_sections/Contact";
 
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center">
       <AboutSection />
-      <WorkSection />
+      <ProjectsSection />
       <ContactSection />
     </div>
   );

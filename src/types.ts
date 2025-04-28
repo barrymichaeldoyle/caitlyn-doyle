@@ -1,5 +1,5 @@
 export enum PageSection {
   about = "about",
-  work = "work",
+  projects = "projects",
   contact = "contact",
 }

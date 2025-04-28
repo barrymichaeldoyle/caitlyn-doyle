@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { PageSection } from "~/types";
+import { cn } from "~/lib/utils";
 
 export function NavContent(props: { onClick?: () => void }) {
   const [activeSection, setActiveSection] = useState<PageSection | null>(null);
@@ -26,27 +27,32 @@ export function NavContent(props: { onClick?: () => void }) {
     return () => observer.disconnect();
   }, []);
 
-  return [PageSection.about, PageSection.work, PageSection.contact].map(
-    (section) => (
-      <Link
-        key={section}
-        href={`#${section}`}
-        className={`relative w-fit border-b-2 ${
-          activeSection === section ? "border-b-white" : "border-b-primary-500"
-        } hover:text-background transition-colors duration-300`}
-        onClick={(e) => {
-          e.preventDefault();
-          document
-            .querySelector(`#${section}`)
-            ?.scrollIntoView({ behavior: "smooth" });
-          props.onClick?.();
-        }}
-      >
-        {section.charAt(0).toUpperCase() + section.slice(1)}
-        {activeSection === section && (
-          <span className="bg-background absolute bottom-0 left-0 h-0.5 w-full" />
-        )}
-      </Link>
-    ),
+  return (
+    <>
+      {Object.values(PageSection).map((section) => (
+        <Link
+          key={section}
+          href={`#${section}`}
+          className={cn(
+            "hover:text-background relative w-fit border-b-1 transition-colors duration-300",
+            activeSection === section
+              ? "border-b-white"
+              : "border-b-primary-500",
+          )}
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .querySelector(`#${section}`)
+              ?.scrollIntoView({ behavior: "smooth" });
+            props.onClick?.();
+          }}
+        >
+          {section.charAt(0).toUpperCase() + section.slice(1)}
+          {activeSection === section && (
+            <span className="bg-background absolute bottom-0 left-0 h-0.5 w-full" />
+          )}
+        </Link>
+      ))}
+    </>
   );
 }

@@ -9,7 +9,7 @@ import { BehanceIcon } from "~/icons/Behance";
 
 export function Footer() {
   return (
-    <footer className="flex justify-center bg-primary-500 text-neutral-100">
+    <footer className="bg-primary-500 flex justify-center text-neutral-100">
       <InnerContent>
         <div className="flex items-center justify-between p-4 px-6">
           <div className="flex gap-6">
@@ -19,9 +19,10 @@ export function Footer() {
             <Link href={linkedin} target="_blank">
               <LinkedInIcon />
             </Link>
-            <Link href={behance} target="_blank">
+            {/* TODO: add back later when Caitlyn has done more there */}
+            {/* <Link href={behance} target="_blank">
               <BehanceIcon />
-            </Link>
+            </Link> */}
             <Link href={dribble} target="_blank">
               <DribbbleIcon />
             </Link>
