@@ -69,7 +69,7 @@ export function MobileNavMenu() {
       </div>
       {isMenuOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black bg-opacity-50"
+          className="fixed inset-0 z-40 bg-black/50"
           onClick={() => setIsMenuOpen(false)}
         />
       )}
