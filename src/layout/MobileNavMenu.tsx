@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Logo } from "./Logo";
 import { NavContent } from "./NavContent";
+import { cn } from "~/lib/utils";
 
 export function MobileNavMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,9 +17,9 @@ export function MobileNavMenu() {
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
@@ -47,9 +48,10 @@ export function MobileNavMenu() {
 
       <div
         ref={menuRef}
-        className={`bg-primary-500 fixed inset-y-0 left-0 z-50 w-64 transform transition-transform duration-300 ease-in-out ${
-          isMenuOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={cn(
+          "bg-primary-500 fixed inset-y-0 left-0 z-50 w-64 transform transition-transform duration-200 ease-in-out",
+          isMenuOpen ? "translate-x-0" : "-translate-x-full",
+        )}
       >
         <div className="flex h-full flex-col">
           <div className="flex items-center justify-between p-4">
@@ -67,12 +69,13 @@ export function MobileNavMenu() {
           </nav>
         </div>
       </div>
-      {isMenuOpen && (
-        <div
-          className="fixed inset-0 z-40 bg-black/20"
-          onClick={() => setIsMenuOpen(false)}
-        />
-      )}
+      <div
+        className={cn(
+          "fixed inset-0 z-40 bg-black/20 transition-opacity duration-200",
+          isMenuOpen ? "opacity-100" : "pointer-events-none opacity-0",
+        )}
+        onClick={() => setIsMenuOpen(false)}
+      />
     </>
   );
 }
