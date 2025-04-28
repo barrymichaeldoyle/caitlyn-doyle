@@ -15,7 +15,7 @@ export function MobileAppItem({
   imageAlt,
 }: MobileAppItemProps) {
   return (
-    <div className="flex flex-col">
+    <div className="mb-4 flex flex-col">
       <div className="relative aspect-[9/16] w-full overflow-hidden">
         <Image
           src={imageSrc}
