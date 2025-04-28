@@ -19,7 +19,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
       <body className="flex min-h-screen flex-col">
         <Header />
         <div className="flex justify-center">
-          <main className="flex-grow">{children}</main>
+          <main className="grow">{children}</main>
         </div>
         <Footer />
       </body>

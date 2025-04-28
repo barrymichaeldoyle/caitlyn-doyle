@@ -15,7 +15,7 @@ export function WorkCard(props: {
     <Link
       href={props.link}
       target={target}
-      className="focus-visible:ring-primary group w-full max-w-[412px] rounded-[21px] border border-primary-500 shadow-xl transition-all hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+      className="focus-visible:ring-primary group w-full max-w-[412px] rounded-[21px] border border-primary-500 shadow-xl transition-all hover:scale-105 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2"
     >
       <div className="rounded-t-[20px] bg-primary-500 text-neutral-100">
         <Image
