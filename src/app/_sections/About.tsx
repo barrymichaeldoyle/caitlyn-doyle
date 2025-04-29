@@ -7,7 +7,7 @@ export function AboutSection() {
   return (
     <section
       id={PageSection.about}
-      className="flex w-full scroll-mt-20 flex-col items-center py-10 sm:mt-20"
+      className="flex w-full scroll-mt-20 flex-col items-center py-10 sm:pt-20"
     >
       <InnerContent className="p-4">
         <div className="flex flex-col gap-6 sm:flex-row">
