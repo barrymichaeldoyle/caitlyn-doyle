@@ -9,7 +9,7 @@ export function ProjectsSection() {
   return (
     <section
       id={PageSection.projects}
-      className="flex w-full scroll-mt-20 flex-col gap-6 p-10"
+      className="flex w-full scroll-mt-20 flex-col items-center gap-6 p-10"
     >
       <InnerContent>
         <H1>My Projects</H1>

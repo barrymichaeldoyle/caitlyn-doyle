@@ -17,10 +17,10 @@ export function NavContent(props: { onClick?: () => void }) {
           }
         });
       },
-      { threshold: 0.5 },
+      { threshold: 1 },
     );
 
-    document.querySelectorAll("section[id]").forEach((section) => {
+    document.querySelectorAll("h1[id]").forEach((section) => {
       observer.observe(section);
     });
 

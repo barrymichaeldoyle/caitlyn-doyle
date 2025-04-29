@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ContactItem } from "~/components/ContactItem";
 import { H2, P } from "~/components/typography";
 import { email, linkedin, resume, youtube } from "~/constants/links";
@@ -9,7 +8,7 @@ export function ContactSection() {
   return (
     <section
       id={PageSection.contact}
-      className="flex w-full scroll-mt-10 flex-col gap-6 p-10"
+      className="flex w-full scroll-mt-10 flex-col items-center gap-6 p-10"
     >
       <InnerContent>
         <H2>Let&apos;s Connect!</H2>
