@@ -15,7 +15,7 @@ export function ProjectsSection() {
         <H1>My Projects</H1>
         <H2>Websites</H2>
         <P>
-          Every project you see here challenged me to think depper, design
+          Every project you see here challenged me to think deeper, design
           <br />
           smarter, and always keep the user first. I&apos;m excited to share a
           <br />
