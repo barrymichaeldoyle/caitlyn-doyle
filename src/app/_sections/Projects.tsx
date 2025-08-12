@@ -12,7 +12,7 @@ export function ProjectsSection() {
       className="flex w-full scroll-mt-20 flex-col items-center gap-6 p-10"
     >
       <InnerContent>
-        <H1>My Projects</H1>
+        <H1>Projects</H1>
         <H2>Websites</H2>
         <P>
           Every project you see here challenged me to think deeper, design
